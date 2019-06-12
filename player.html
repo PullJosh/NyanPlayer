@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        background: black;
+      }
+
+      #rainbow {
+        position: fixed;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 100ms linear;
+      }
+
+      #rainbow.visible {
+        visibility: visible;
+      }
+    </style>
+    <title>Nyan Player</title>
+  </head>
+  <body>
+    <canvas id="rainbow"></canvas>
+    <audio id="audio" src="NyanCat.mp3" controls></audio>
+
+    <script src="player.js"></script>
+  </body>
+</html>
